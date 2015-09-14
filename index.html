@@ -1,0 +1,88 @@
+<!doctype html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Interest Calculator</title>
+	<link rel="stylesheet" href="css/foundation.css" />
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr.js"></script>
+</head>
+<body>
+
+<div class= "row">
+
+	<div class="form-container large-2 large-push-2 columns">
+		<div class="">
+			<form>
+				<label for="creditLine">Line of Credit</label>
+				<input type="number" name="creditLine">
+				<label for="apr">Annual Percentage Rate %</label>
+				<input type="number" name="apr">
+			</form>
+		</div> 
+	</div>
+
+	<div class="form-container large-5 large-pull-3 columns">
+		<div class="large-">
+			<form>
+				<label for="amount">Amount</label>
+				<input type="number" name="amount">
+				<label for="day">Day of the Month</label>
+				<input type="number" name="day">
+				<input type="radio" name="payment">
+				<label for="payment">Payment</label>
+				<input type="radio" name="credit">
+				<label for="credit">Credit</label>
+				<a class="button small submit" href="#">Submit</a>
+			</form>
+		</div>
+	</div>
+</div>
+
+<div class="row">
+	<div class="large-10 large-centered columns">
+		<table>
+			<thead>
+				<tr>
+					<th width="200">Date</th>
+					<th>Amount</th>
+					<th width="150">Days</th>
+					<th width="150">Total Interest Accrued</th>
+					<th width="150">Total Charges Including Interest</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="total-section">
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td style="text-align: right;">Total</td>
+					<td class="total-amount"></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td style="text-align: right;">Available Credit</td>
+					<td class="total-credit"></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+<script src="js/vendor/jquery.js"></script>
+<script src="js/foundation.min.js"></script>
+<script src="js/main.js"></script>
+<script>
+	$(document).foundation();
+</script>
+</body>
+</html>
